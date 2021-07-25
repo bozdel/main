@@ -1,0 +1,10 @@
+all: main_v2.o snake.o draw.o
+	gcc main_v2.o snake.o draw.o -o snake_v3
+main_v2.o: main_v2.c
+	gcc -c main_v2.c 
+snake.o: snake.c
+	gcc -c snake.c
+draw.o: draw.c
+	gcc -c draw.c
+clean:
+	rm *.o

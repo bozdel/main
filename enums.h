@@ -1,16 +1,24 @@
-#ifndef MY_SNAKE_ENUMS_H
-#define MY_SNAKE_ENUMS_H
+#ifndef ENUMS_H
+#define ENUMS_H
 
 enum direction {
-    UP, DOWN, LEFT, RIGHT
+	UP, DOWN, LEFT, RIGHT
 };
 
 enum cell_type {
-    WALL, SNAKE, FOOD, EMPTY
+	WALL, SNAKE, FOOD, EMPTY
 };
 
 enum color {
-	RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN
+	BLACK = 30,
+	RED,
+	GREEN,
+	YELLOW,
+	BLUE,
+	MAGENTA,
+	CYAN,
+	WHITE,
+	DEFAULT = 39
 };
 
-#endif //MY_SNAKE_ENUMS_H
+#endif //ENUMS_H
