@@ -263,8 +263,8 @@ int main() {
 
 	atexit(set_old_terminal_mode);
 
-	int field_size = 10;
-	int food_amo = 80;
+	int field_size = 30;
+	int food_amo = 15;
 	field *fld = init_field(field_size, food_amo);
 	snake *snk = init_snake(fld->size / 2, fld->size / 2, GREEN);
 
